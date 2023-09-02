@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FIND MARKET</title>
+        <link rel="stylesheet" href="{% static 'Export.css'%}">
+    </head>'
+     <body>
+        <div class="wrapper">
+            <div class="my-ul" >
+                <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/Imports/">EXPORTER</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">NEWS</a></li>
+            </ul>
+            </div>
+            <h1 style="font-size: 30px;">Find Market</h1>
+            <div class="container">
+                <form method="post" action="Results/">
+                {% csrf_token %}
+                
+                    <label for="product">product</label>
+                    <input class="product" type="text" id="product" placeholder="Product"  name="product" maxlength="100" required >
+
+                    <label for="quantity">quantity</label> 
+                    <input class="quantity" type="text" id="quantity" placeholder="Quantity" name="quantity" maxlength="100" required>
+                    
+                    <label for="Country">Country</label>
+                    <input class="Country" type="text" id="Country" placeholder="Your Country" name="Country" maxlength="100" required>               
+
+                    <button class="search-button" type="submit" >Search</button>
+            </form>
+            </div>
+            
+                   
+        </div>
+        
+     </body>
+</html>

@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'results.css' %}">
+        
+        <title>Import and Exports Advisers</title>
+    </head>
+    <body>
+        <ul class="accodion">
+            <li>
+                <input type="radio" name="accodion" id="first" checked>
+                <label for="first">Demand Level</label>
+                <div class="content">
+                    <p>
+                        {{data}} 
+                    </p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accodion" id="second">
+                <label for="second">Approximate Selling Price</label>
+                <div class="content">
+                    <p>
+                        {{data2}} 
+                    </p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accodion" id="third">
+                <label for="third">Best Transportation Method</label>
+                <div class="content">
+                    <p>
+                        {{data3}}  
+                    </p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accodion" id="fourth">
+                <label for="fourth">Importers</label>
+                <div class="content">
+                    <p>
+                        {{data4}}  
+                    </p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accodion" id="fifth">
+                <label for="fifth">Legal Requirements</label>
+                <div class="content">
+                    <p>
+                        {{data5}} 
+                    </p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accodion" id="sixth">
+                <label for="sixth">General Advice</label>
+                <div class="content">
+                    <p>
+                        {{data6}} 
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </body>
+</html>

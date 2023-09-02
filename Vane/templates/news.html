@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'news1.css' %}">
+</head>
+<body>
+    
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/Vane/">Market</a></li>
+            <li><a href="/Imports/">Exporter</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">News</a></li>
+        </ul>
+    
+    
+     {% for news in data %}
+    <div class="content">
+         <div class="news">
+        <h1>{{ news.title }}</h1>
+        <p>{{ news.description }}</p>
+        <p>Author : {{ news.source.name }}</p> <!-- Use double curly braces for accessing dictionary values -->
+        <p class="link"><a class="link" href="{{ news.url }}">View details</a></p>
+    </div>
+    </div>  
+   
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('vertex-bg-02.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.wrapper{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 800px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(35px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: gray;   
+    border-radius: 30px;
+    padding: 30px 40px;
+    margin-left: 25px;
+
+}
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    
+
+}
+.wrapper .input-box{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    display: block;
+
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+
+}
+.input-box ::placeholder{
+    color: #fff;
+}
+
+
+.input_box .code{
+    width: 20px;
+}
+.code,.code1{
+    display: inline-block;
+    width: 20px;
+}
+
+select{
+    padding: 8px;
+    border-radius: 8px;
+    background-color: transparent;
+    font-color:white;
+}
+
+li{
+    margin-left: 25px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.lists{
+    display: block;
+    
+}
+ul{
+    display: block;
+    
+    
+}
+ul li{
+    align-items: center;
+    display: inline-block;
+    width: 1;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 12px;
+    padding-top: 6px;
+    margin-left: 10%;
+    margin-bottom: 50px;
+    
+    
+
+    
+   
+
+}
+ul li a{
+    display: inline-block;
+    
+    padding-left: 2px;
+    color: rgb(250, 248, 255);
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    
+    
+}
+.submit_btn{
+    width: 100px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    margin-left: 35%;
+    height: 30px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.5s background-color 0.5s;
+
+
+}
+.submit_btn:hover{
+    color: lightblue;
+    background-color: seagreen;
+}
+.Exporter{
+    background: linear-gradient(90deg, #2193b0, #6dd5ed);
+    color: white;
+    display: inline-block;
+    margin-left: 34%;
+    border-radius: 7px;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="table.css">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: "Poppins",sans-serif;   
+                            
+            }
+            body{
+                background-color: gray; 
+            }
+            .container{
+                
+                
+            }
+            .first-row{
+                height: 65%;
+                margin-top: 2%;
+                margin-left: 2%;
+                
+
+            }
+            .product-image{
+                width: 400px;
+                margin-right: 5%;               
+                display: inline-block;
+                
+            }
+            .img{
+                width: 100%;
+                border-radius: 5%;
+            }
+            label{
+                display: block;
+                margin-left: 40%;
+            }
+            .product-details{
+                display: inline-block;
+                vertical-align: top;
+                width: 400px;
+                background-color: #6f6c76;
+                padding-left: 2%;
+                border-radius: 5%;
+                
+               
+                
+
+            }
+           
+                
+            
+            .country{
+                display: grid;
+                
+            }
+            p{
+                display: inline-block;
+                color: white;
+                font-size: 16px;
+            }
+            .product-details div{
+                line-height: 50px;
+            }
+            .value{
+                padding-left: 30%;
+                justify-content: left;
+            }
+            .title{
+                font-weight: bold;
+            }
+            .auto-generate{
+                margin-left: 2%;
+                margin-right: 5%;
+            }
+            .message,.auto-generate{
+                text-decoration: none;
+                cursor: pointer;
+                color: #e6e4eb;
+                transition: text-decoration 0.5s;
+            }
+            .message:hover,.auto-generate:hover{
+                text-decoration: underline;
+            }
+            .like{
+                margin-top: 10%;
+            }
+           
+       
+
+        </style>  
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="first-row">
+
+                <div class="product-image">                    
+                    <img class="img" src="product-1.jpg">
+                    <label for="product-image">product</label>
+                </div>
+                   <div class="product-details">
+                    <div class="country">
+                    <div>
+                        <p class="title">Country :</p>
+                        <p class="value">Malawi</p>
+                    </div>
+                        
+                    </div>
+
+                    <div>
+                        <div> <p class="title">Brand :</p>
+                        <p class="value">New brand</p>
+                        </div>
+                        
+                    </div>
+
+                    <div>
+                    <div>
+                        <p class="title">phone :</p>
+                        <p class="value">+265 997 71 20 87</p>
+                    </div>
+                    
+                        
+                    </div>
+                    <div> <p class="title">Email :</p>
+                         <p class="value">blownbrian@gmail.com</p>
+                    </div>
+
+                    <div class="like">
+                        <p class="like-this">like this ?</p>
+                        <p class="message">write message</p>
+                        <p class="auto-generate">Auto generate message</p>
+                    </div>
+                                        
+                    
+                    <div>
+
+                    </div>
+                    <div></div>
+                </div>
+
+            </div>
+
+            <div class="second-row">
+                <div class="simple-description"></div>
+                <div class="write-message"></div>
+                <div class="send-message"></div>
+            </div>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,38 @@
+{%load static%}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'search_page.css'%}">   
+
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="search">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Exporter</a></li>
+                    <li><a href="/">market</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">News</a></li>
+                </ul>
+                <div class="search_div">
+
+                    <form method="get" action="{% url 'table' %}">
+                     <input class="search_box" type="text" placeholder="search" id="search_box" maxlength="100" required>
+                     <button class="search_button" type="submit">Search</button>
+                </form>
+                </div>               
+                
+               
+            </div>
+            <div  class="explanation">
+                <p>Welcome ! Your one-stop destination for finding the perfect products you've been searching for. Whether you're on the hunt for must-have gadgets, fashion essentials, home decor, or any other coveted items, our user-friendly search feature makes the process effortless. We've curated an extensive collection of high-quality products from trusted brands, ensuring that you can shop with confidence. Discover a world of possibilities at your fingertips, and let us help you find exactly what you desire. </p>
+            </div>
+        </div>
+        
+
+    </body>
+</html>

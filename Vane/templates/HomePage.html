@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style2.css'%}">
+    
+    <title>Import and Exports Advisers</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul class="my-ul">
+                <li><a href="#">HOME</a></li>
+                <li><a href="Vane/">MARKET</a></li>
+                <li><a href="Imports/">Exporter</a></li>
+                <li><a href="Imports/">ABOUT</a></li>
+                <li><a href="news/">NEWS</a></li>
+                <li><a href="search/">Search</a></li>
+
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>Imports And Exports</h1>
+            <p>{{content}}</p>
+        </div>
+        <form action="{% url 'sign_in' %}" method="get">
+            <button>sign_in</button>
+        </form>
+
+        <form action="{% url 'sign_up' %}" method="get">
+            <button>sign_up</button>
+        </form>
+        
+
+        
+        
+    </div>
+    
+</body>
+</html>

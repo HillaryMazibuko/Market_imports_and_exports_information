@@ -6,7 +6,7 @@ body {
     width: 80%;
     display: block;
     margin-left: 7%;
-    background-image: url(wall1.jpg);           
+    background-color: white;          
     
 }
 
@@ -58,7 +58,7 @@ li{
     padding-left: 6%;
     border-radius: solid 2px;
     border-color: black ;
-    background-color: gray;
+    background-color: blue;
     border-radius: 15px;
 
 }

@@ -65,31 +65,10 @@ def generate_message():
          return answer['content']
         
         except Exception:
+              return generate_message()
          
-         try:
-          
-          second_key ='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'
-
-          second_header ={"Content_Type": "application/json", "Authorization": "Bearer {}".format(second_key)}
-         
-          response=r.post(base_url+"chat/completions",headers=second_header,json=data).text
-
-          full_response=json.loads(response)
-
-          answer=full_response["choices"][0]["message"]
-
-          message.append(answer)
-
-          print("in 2")
-
-          return answer['content']
-         
-         except Exception:
+        
                
-               print("in 3") 
-               print(response)
-
-               return generate_message()
                
 
 
